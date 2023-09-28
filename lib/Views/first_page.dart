@@ -17,33 +17,38 @@ class FirstPage extends StatelessWidget {
          ),
          ],
       ),
-    body: Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        ///Value updates 
-       const Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-         children: [
-           Text("0"),
-           Text("Total"),
-         ],
-       ),
-       const SizedBox(
-        height: 30,
-       ),
-       Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-         children: [
-           IconButton(onPressed: (){},
-         icon: const Icon(Icons.add)
+    body: Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          ///Value updates 
+         const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+           children: [
+             Text("0"),
+             Text("Total"),
+           ],
          ),
-          MaterialButton(onPressed: (){},
-          child: const Text("NextPage"),
-          )
-         ],
-       ),
-      ],
+         const SizedBox(
+          height: 30,
+         ),
+         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+           children: [
+             IconButton(onPressed: (){},
+           icon: const Icon(Icons.add)
+           ),
+            MaterialButton(
+              color: const Color.fromARGB(255, 32, 11, 4),
+              onPressed: (){},
+            child: const Text("NextPage",style: TextStyle(color: Colors.white),),
+            )
+           ],
+         ),
+        ],
+      ),
     ),
     );
   }

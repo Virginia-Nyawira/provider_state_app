@@ -39,7 +39,8 @@ class SecondPage extends StatelessWidget {
          icon: const Icon(Icons.add)
          ),
           MaterialButton(onPressed: (){},
-          child: const Text("NextPage"),
+         color: const Color.fromARGB(255, 32, 11, 4),
+          child: const Text("NextPage", style: TextStyle(color: Colors.white),),
           )
          ],
        ),
